@@ -1,0 +1,12 @@
+@mixin h1 {
+    color: #444;
+    display: inline;
+    text-align: center;
+    margin: 20px;
+}
+
+@mixin reset {
+    margin: 0;
+    padding: 0;
+  }
+

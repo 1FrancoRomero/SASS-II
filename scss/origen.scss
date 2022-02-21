@@ -1,0 +1,39 @@
+//Holis//
+//==============================================================================================//
+
+//entiendo que deberia ponerlo en carpetas//
+
+
+
+
+//imports//
+@import "_variables.scss";
+@import "_extend.scss";
+@import "_mixin.scss";
+
+//==============================================================================================//
+
+.parrafo2{
+    @extend .parrafo;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    @include reset;
+    background-color: map-get($map: $palette, $key:"fondo" )
+}
+
+.h1-home {
+    @include h1;
+    background-color: map-get($map: $palette, $key:"terciario" );
+}
+
+.nav{
+    background-color:map-get($map: $palette, $key:"secundario" ) ;
+    .nav-link{
+        color: map-get($map: $palette , $key: "primario");
+    }
+}
+
+
